@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">PR7</string>
+    <string name="robert">Robert Fox 1</string>
+    <string name="albert">Albert Flores</string>
+    <string name="kathryn">Kathryn Murphy</string>
+    <string name="courtney">Courtney Henry</string>
+    <string name="eleanor">Eleanor Pena</string>
+    <string name="marvin">Marvin McKinney</string>
+    <string name="darlene">Darlene Robertson</string>
+    <string name="bessie">Bessie Cooper</string>
+    <string name="ivan">Иван</string>
+    <string name="ivan2">Иван,</string>
+    <string name="hello">приветствуем в нашей приложении</string>
+    <string name="sell">Предложения</string>
+    <string name="moreinf">Подробная информация</string>
+    <string name="click">КЛИК</string>
+    <string name="click2">КЛИК</string>
+    <string name="click3">КЛИК</string>
+    <string name="todo">TODO</string>
+    <string name="firstimage">Первое фото</string>
+    <string name="secondimage">Второе фото</string>
+    <string name="thirdimage">Третье фото</string>
+    <string name="thirtyimage">Четвертое фото</string>
+    <string name="fiftyimage">Пятое фото</string>
+    <string name="siximage">Шестое фото</string>
+    <string name="piter">Санкт-Петербург</string>
+    <string name="vladivostok">Владивосток</string>
 </resources>

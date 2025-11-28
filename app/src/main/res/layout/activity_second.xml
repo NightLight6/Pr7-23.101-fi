@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -7,8 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/Secondary">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,15 +29,17 @@
                     android:id="@+id/profile_image"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
+                    android:contentDescription="TODO"
                     android:src="@drawable/profilephoto"
-                    android:layout_marginEnd="15dp" />
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ContentDescription,HardcodedText" />
 
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Иван"
+                    android:text="@string/ivan"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -46,23 +48,24 @@
                     android:id="@+id/icon1"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
+                    android:contentDescription="TODO"
                     android:src="@drawable/profilebutton"
                     android:layout_marginEnd="16dp"
-                    />
+                    tools:ignore="ContentDescription,HardcodedText" />
 
                 <ImageView
                     android:id="@+id/icon2"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/helpbutton"
-                    />
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Иван,"
+                android:text="@string/ivan2"
                 android:textSize="16sp"
                 android:textStyle="normal"
                 android:textColor="#000000"
@@ -71,13 +74,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="приветствуем в нашей приложении"
+                android:text="@string/hello"
                 android:textSize="14sp"
                 android:textColor="#000000"
                 android:layout_marginBottom="24dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:baselineAligned="false"
             android:orientation="horizontal"
             android:weightSum="3">
             <LinearLayout
@@ -93,14 +97,16 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/people1"
-                    android:contentDescription="Первое фото" />
+                    android:contentDescription="@string/firstimage" />
+
                 <Button
                     android:id="@+id/button1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/Main"
-                    android:textColor="@color/Secondary"
-                    android:text="КЛИК" />
+                    android:text="@string/click"
+                    android:textColor="#3E2723"
+                    tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -115,14 +121,16 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/people2"
-                    android:contentDescription="Второе фото" />
+                    android:contentDescription="@string/secondimage" />
+
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/Main"
-                    android:textColor="@color/Secondary"
-                    android:text="КЛИК" />
+                    android:text="@string/click2"
+                    android:textColor="#3E2723"
+                    tools:ignore="VisualLintButtonSize" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -137,30 +145,35 @@
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/people3"
-                    android:contentDescription="Третье фото" />
+                    android:contentDescription="@string/thirdimage" />
+
                 <Button
-                        android:id="@+id/button3"
+                    android:id="@+id/button3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/Main"
-                    android:textColor="@color/Secondary"
-                    android:text="КЛИК" />
+                    android:text="@string/click3"
+                    android:textColor="#3E2723"
+                    tools:ignore="VisualLintButtonSize" />
             </LinearLayout>
         </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Предложения"
+                android:layout_marginBottom="16dp"
+                android:baselineAligned="false"
+                android:text="@string/sell"
+                android:textColor="#0D47A1"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:layout_marginBottom="16dp" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="3"
+                tools:ignore="DisableBaselineAlignment">
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -172,9 +185,10 @@
                         android:id="@+id/imageView4"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
+                        android:contentDescription="@string/thirtyimage"
                         android:scaleType="centerCrop"
                         android:src="@drawable/people4"
-                        android:contentDescription="Четвертое фото" />
+                        tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -189,7 +203,7 @@
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/people5"
-                        android:contentDescription="Пятое фото" />
+                        android:contentDescription="@string/fiftyimage" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -202,9 +216,10 @@
                         android:id="@+id/imageView6"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
+                        android:contentDescription="@string/siximage"
                         android:scaleType="centerCrop"
                         android:src="@drawable/people6"
-                        android:contentDescription="Шестое фото" />
+                        tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
             <RadioGroup
@@ -216,55 +231,60 @@
                     android:id="@+id/radio_moscow"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:paddingStart="8dp"
                     android:text="Москва"
                     android:textSize="16sp"
                     app:buttonTint="@color/radio_button_tint_color"
-                    android:paddingStart="8dp" />
+                    tools:ignore="HardcodedText,RtlSymmetry,TextSizeCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
 
                 <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/radio_spb"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    app:buttonTint="@color/radio_button_tint_color"
-                    android:text="Санкт-Петербург"
+                    android:layout_height="48dp"
                     android:checked="true"
+                    android:paddingStart="8dp"
+                    android:text="@string/piter"
                     android:textSize="16sp"
-                    android:paddingStart="8dp" />
+                    app:buttonTint="@color/radio_button_tint_color"
+                    tools:ignore="RtlSymmetry,TextSizeCheck,VisualLintButtonSize" />
 
                 <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/radio_novosibirsk"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    app:buttonTint="@color/radio_button_tint_color"
+                    android:paddingStart="8dp"
                     android:text="Новосибирск"
                     android:textSize="16sp"
-                    android:paddingStart="8dp" />
+                    app:buttonTint="@color/radio_button_tint_color"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextSizeCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
 
                 <androidx.appcompat.widget.AppCompatRadioButton
                     android:id="@+id/radio_vladivostok"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    app:buttonTint="@color/radio_button_tint_color"
-                    android:text="Владивосток"
+                    android:layout_height="48dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/vladivostok"
                     android:textSize="16sp"
-                    android:paddingStart="8dp" />
+                    app:buttonTint="@color/radio_button_tint_color"
+                    tools:ignore="RtlSymmetry,TextSizeCheck,VisualLintButtonSize" />
             </RadioGroup>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="175dp"
                     android:layout_height="175dp"
-                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
                     android:src="@drawable/bgphoto"
-                    android:contentDescription="@string/app_name" />
+                    tools:ignore="ImageContrastCheck" />
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Подробная информация"
+                android:text="@string/moreinf"
                 android:textSize="18sp"
                 android:textColor="#000000"
                 android:layout_marginBottom="24dp" />
